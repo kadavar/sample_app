@@ -3,6 +3,7 @@ ruby '2.0.0'
 #ruby-gemset=railstutorial_rails_4_0
 gem 'rails',                '4.2.2'
 gem 'bootstrap-sass', '2.3.2.0'
+gem 'bcrypt-ruby', '3.1.2'
 gem 'sass-rails',           '5.0.2'
 gem 'uglifier',             '2.5.3'
 gem 'coffee-rails',         '4.1.0'
@@ -16,8 +17,9 @@ group :development, :test do
   gem 'byebug',      '3.4.0'
  # gem 'web-console', '2.0.0.beta3'
   gem 'spring',      '1.1.3'
-      gem "rspec-rails"
-    gem 'capybara', '2.2.0'
+  gem "rspec-rails"
+  gem 'capybara', '2.2.0'
+    gem 'factory_girl_rails','4.2.1'
 end
 group :production do
   gem 'pg', '0.15.1'
