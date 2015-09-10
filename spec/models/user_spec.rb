@@ -7,6 +7,11 @@ describe User do
                    password: "foobar", password_confirmation: "foobar")
 end
     subject {@user}
+     
+    describe "remember token" do
+    before { @user.save }
+  it { expect(@user.remember_token).not_to be_blank }
+    end
     
     it {should respond_to(:name)}
     it {should respond_to (:email)}
@@ -14,6 +19,7 @@ end
     it {should respond_to(:password)}
     it {should respond_to (:password_confirmation)}
     it {should respond_to (:authenticate)}
+    it { should respond_to(:remember_token) }
     
     it{should be_valid}
     
