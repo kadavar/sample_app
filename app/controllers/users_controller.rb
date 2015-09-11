@@ -10,10 +10,14 @@ class UsersController < ApplicationController
   @user = User.find(params[:id])
   end
     def new
+        if signed_in? redirect_to root_path
+        else 
         @user = User.new
+        end
   end
     def create 
-    
+     if signed_in? redirect_to root_path
+        else 
         @user=User.new(user_params)
         if @user.save
              sign_in @user
@@ -21,6 +25,7 @@ class UsersController < ApplicationController
             redirect_to @user
         else render 'new'
         end
+     end
     end
     
     def edit
