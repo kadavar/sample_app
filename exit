@@ -1,0 +1,60 @@
+[33mcommit daea70737249dd0e17321e3d98821e0acac26e03[m
+Author: Alexandr <kadavar32@yahoo.com>
+Date:   Fri Sep 11 07:28:40 2015 +0300
+
+    Finish USER edit , update,index,destroy
+
+[33mcommit 8b1233f4335a9be97a41e0858629d6bcd1f12b22[m
+Merge: 2b30f99 bccea9f
+Author: Alexandr <kadavar32@yahoo.com>
+Date:   Fri Sep 11 01:10:27 2015 +0300
+
+    Merge branch 'sign-in-out'
+
+[33mcommit bccea9f1c354d511c10a026d46a7599b84537767[m
+Author: Alexandr <kadavar32@yahoo.com>
+Date:   Fri Sep 11 01:10:12 2015 +0300
+
+    finish sign in
+
+[33mcommit 2b30f9905b4d1cd1a53ab0dab20cabe9d95fd337[m
+Author: Alexandr <kadavar32@yahoo.com>
+Date:   Thu Sep 10 23:12:15 2015 +0300
+
+    exercises
+
+[33mcommit 840d84fd7c910e8a5096eb80745dfe80120e5a3f[m
+Author: Alexandr <kadavar32@yahoo.com>
+Date:   Thu Sep 10 22:33:08 2015 +0300
+
+    true commit
+
+[33mcommit 27005ba4d185fc893a486c17a443189240d84966[m
+Author: Alexandr <kadavar32@yahoo.com>
+Date:   Thu Sep 10 21:47:38 2015 +0300
+
+    finish user signup
+
+[33mcommit 0ab42dd0d656b67230d0f9ccf8016dfd92c05f6e[m
+Author: Alexandr <kadavar32@yahoo.com>
+Date:   Wed Sep 9 23:10:25 2015 +0300
+
+    Finish routes
+
+[33mcommit b73519069ab508fb77299327f7d343736ff20321[m
+Author: Alexandr <kadavar32@yahoo.com>
+Date:   Wed Sep 9 16:16:03 2015 +0300
+
+    Add a full_title_helper
+
+[33mcommit 6f7f65c590392b84168cf09c2c1df0dabc9c8cd6[m
+Author: Alexandr <kadavar32@yahoo.com>
+Date:   Wed Sep 9 13:09:59 2015 +0300
+
+    finish static pages
+
+[33mcommit 8edbe1bc8d9575f368cca249f7c4c8e5882f984e[m
+Author: Alexandr <kadavar32@yahoo.com>
+Date:   Wed Sep 9 03:44:15 2015 +0300
+
+    'ini'
