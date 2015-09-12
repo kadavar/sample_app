@@ -85,7 +85,9 @@ describe "authorization" do
           before { visit users_path }
           it { should have_title('Sign in') }
         end
+          
       end
+
     end
       describe "as wrong user" do
       let(:user) { FactoryGirl.create(:user) }
