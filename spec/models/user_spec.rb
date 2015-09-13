@@ -137,6 +137,9 @@ describe "when password is not present" do
         it{expect(@user.feed).to include(newer_micropost) }
         it{expect(@user.feed).to include(older_micropost) }
         it{expect(@user.feed).not_to include(unfollowed_post) }
+      it{expect(@user.feed).not_to include(unfollowed_post) }
+      
+      
    # its(:feed) do
       #  followed_user.microposts.each do |micropost|
        #   should include(micropost)
