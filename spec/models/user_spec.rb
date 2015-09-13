@@ -124,13 +124,24 @@ describe "when password is not present" do
   end
   describe "micropost associations" do
       describe "status" do
-      let(:unfollowed_post) do
+     let(:unfollowed_post) do
         FactoryGirl.create(:micropost, user: FactoryGirl.create(:user))
       end
-      it{expect(@user.feed).to include(newer_micropost) }
+      let(:followed_user) { FactoryGirl.create(:user) }
+
+      before do
+        @user.follow!(followed_user)
+        3.times { followed_user.microposts.create!(content: "Lorem ipsum") }
+      end
+      
+        it{expect(@user.feed).to include(newer_micropost) }
         it{expect(@user.feed).to include(older_micropost) }
         it{expect(@user.feed).not_to include(unfollowed_post) }
-    
+   # its(:feed) do
+      #  followed_user.microposts.each do |micropost|
+       #   should include(micropost)
+       # end
+      #end
     end
     before { @user.save }
     let!(:older_micropost) do
